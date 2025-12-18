@@ -26,29 +26,205 @@
         </div>
       </div>
 
-      <div class="social-icons">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
-            class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
-            class="fab fa-x-twitter"></i></a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
-            class="fab fa-linkedin-in"></i></a>
+      <div class="header-right">
+        <div class="social-icons hide-mobile">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+              class="fab fa-x-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
       </div>
     </div>
 
-    <nav class="lower-nav">
+    <nav class="lower-nav hide-mobile">
       <ul class="nav-links">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">New Arrivals</a></li>
         <li><a href="#">Categories</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-overlay"></div>
+      <div class="mobile-menu-drawer">
+        <div class="mobile-menu-inner">
+          <div class="search-mobile">
+            <div class="search-box">
+              <input type="text" placeholder="Search products...">
+              <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+          <ul class="nav-links-mobile">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="social-icons-mobile">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="badge">New Collection 2026</span>
+        <h1>Discover the Power of <span class="gradient-text">Genuine Crystals</span></h1>
+        <p>Elevate your space and spirit with our hand-selected, ethically sourced premium crystal collection. Each
+          piece is a unique masterpiece of nature.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary">Shop Collection</a>
+          <a href="about.html" class="btn btn-secondary">Our Story</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Unique Pieces</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">15k+</span>
+            <span class="stat-label">Happy Souls</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <div class="slider-container">
+            <img src="IMG/hero_crystal.png" alt="Featured Premium Crystal 1" class="slider-img active">
+            <img src="IMG/hero_crystal_2.png" alt="Featured Premium Crystal 2" class="slider-img">
+            <img src="IMG/hero_crystal_3.png" alt="Featured Premium Crystal 3" class="slider-img">
+          </div>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="glass-card info-tag">
+            <i class="fas fa-certificate"></i>
+            <span>100% Authentic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="luxury-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-col brand-col">
+          <img src="IMG/logo/Main Logo.png" alt="Crystal Products" class="footer-logo">
+          <p class="footer-desc">Curating the world's finest crystals to bring natural energy and timeless beauty into
+            your sanctuary. Every piece tells a story of the earth.</p>
+        </div>
+
+        <!-- Shop Column -->
+        <div class="footer-col list-col">
+          <h3>Collection</h3>
+          <ul>
+            <li><a href="#">Gemstones</a></li>
+            <li><a href="#">Clusters & Geodes</a></li>
+            <li><a href="#">Polished Points</a></li>
+            <li><a href="#">Rare Finds</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="footer-col list-col">
+          <h3>Experience</h3>
+          <ul>
+            <li><a href="about.html">Our Heritage</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Column -->
+        <div class="footer-col social-col">
+          <h3>Connect</h3>
+          <p>Join our community for arrival alerts and crystal wisdom.</p>
+          <div class="footer-social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Crystal Products. All Rights Reserved. Crafted for Elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+      });
+
+      // Close mobile menu when links are clicked
+      const mobileLinks = document.querySelectorAll('.nav-links-mobile a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('no-scroll');
+        });
+      });
+    }
+
+    // Hero Slider
+    const images = document.querySelectorAll('.slider-img');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+
+    if (images.length > 0 && dots.length > 0) {
+      function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        dots[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+        dots[currentIndex].classList.add('active');
+      }
+      setInterval(showNextImage, 5000);
+    }
+  </script>
 </body>
 
 </html>

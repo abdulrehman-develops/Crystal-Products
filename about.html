@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Crystal Products</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="upper-nav">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="IMG/logo/Main Logo.png" alt="Crystal Products Logo" class="logo primary-logo">
+                </a>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="social-icons hide-mobile">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                            class="fab fa-x-twitter"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+            </div>
+        </div>
+
+        <nav class="lower-nav hide-mobile">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Side Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-overlay"></div>
+            <div class="mobile-menu-drawer">
+                <div class="mobile-menu-inner">
+                    <div class="search-mobile">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search products...">
+                            <button type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <ul class="nav-links-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="about.html" class="active">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="social-icons-mobile">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <span class="badge">Our Journey</span>
+                <h1>Our Passion for <span class="gradient-text">Pure Crystal Energy</span></h1>
+                <p>From the depths of the earth to your sacred space, we believe in the transformative power of nature's
+                    most beautiful treasures.</p>
+            </div>
+        </section>
+
+        <section class="about-story">
+            <div class="about-container">
+                <div class="story-grid">
+                    <div class="story-image">
+                        <div class="image-wrapper">
+                            <img src="IMG/about_hero.png" alt="Our Crystal Collection">
+                        </div>
+                    </div>
+                    <div class="story-text">
+                        <h2>The Spark of Inspiration</h2>
+                        <p>Crystal Products began with a simple fascination: how can something so ancient and raw also
+                            be so refined and powerful? Our founders spent years travelling the globe, meeting with
+                            ethical miners and expert lapidaries to understand the journey of every stone.</p>
+                        <p>Today, we bring that same dedication to every piece we curate. We don't just sell crystals;
+                            we share the stories of the earth.</p>
+
+                        <div class="values-grid">
+                            <div class="value-card glass-card">
+                                <i class="fas fa-gem"></i>
+                                <h3>Curated Quality</h3>
+                                <p>Every stone is hand-selected by our experts for its clarity, vibration, and natural
+                                    beauty.</p>
+                            </div>
+                            <div class="value-card glass-card">
+                                <i class="fas fa-leaf"></i>
+                                <h3>Ethically Sourced</h3>
+                                <p>We work directly with small-scale mines that prioritize environmental care and fair
+                                    labor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discovery-section">
+            <div class="discovery-banner">
+                <h2>Your Journey Begins Here</h2>
+                <p>Explore our curated collection and find the crystal that speaks to your unique energy.</p>
+                <a href="index.html" class="btn btn-primary">Discover More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col brand-col">
+                    <img src="IMG/logo/Main Logo.png" alt="Crystal Products" class="footer-logo">
+                    <p class="footer-desc">Curating the world's finest crystals to bring natural energy and timeless
+                        beauty into your sanctuary. Every piece tells a story of the earth.</p>
+                </div>
+
+                <!-- Shop Column -->
+                <div class="footer-col list-col">
+                    <h3>Collection</h3>
+                    <ul>
+                        <li><a href="#">Gemstones</a></li>
+                        <li><a href="#">Clusters & Geodes</a></li>
+                        <li><a href="#">Polished Points</a></li>
+                        <li><a href="#">Rare Finds</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-col list-col">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li><a href="about.html">Our Heritage</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Column -->
+                <div class="footer-col social-col">
+                    <h3>Connect</h3>
+                    <p>Join our community for arrival alerts and crystal wisdom.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Crystal Products. All Rights Reserved. Crafted for Elegance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+
+            // Close mobile menu when links are clicked
+            const mobileLinks = document.querySelectorAll('.nav-links-mobile a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
