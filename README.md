@@ -14,9 +14,6 @@ A premium, high-fidelity e-commerce interface designed for a luxury crystal bran
 *   **Micro-Interactions**: Smooth hover states, staggered entry animations, and interactive buttons that enhance engagement.
 *   **Unified Design System**: Consistent typography (Inter), spacing, and component styling across Home, Products, New Arrivals, About, Offers, and Contact pages.
 
-## 🚀 Live Demo
-
-*(Insert link to live demo here if applicable)*
 
 ## 📂 Project Structure
 
