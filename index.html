@@ -33,12 +33,30 @@
 
       <div class="search-container">
         <div class="search-box">
-          <input type="text" placeholder="Search products...">
+          <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
           <button type="button"><i class="fas fa-search"></i></button>
         </div>
       </div>
 
       <div class="header-right">
+        <div class="wishlist-wrapper">
+          <a href="#" class="wishlist-btn-luxe" aria-label="View Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="wishlist-badge-luxe">0</span>
+          </a>
+          <div class="wishlist-dropdown-luxe" id="wishlistDropdown">
+            <!-- Dynamic Content -->
+          </div>
+        </div>
+        <div class="cart-wrapper">
+          <a href="#" class="cart-btn-luxe" aria-label="View Collection">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-badge-luxe">0</span>
+          </a>
+          <div class="cart-dropdown-luxe" id="cartDropdown">
+            <!-- Dynamic Content -->
+          </div>
+        </div>
         <div class="social-icons hide-mobile">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
               class="fab fa-facebook-f"></i></a>
@@ -158,7 +176,9 @@
 
       <div class="product-grid luxury-grid">
         <!-- Product 1 -->
-        <div class="product-card glass-card-v2">
+        <div class="product-card glass-card-v2" data-product-id="1" data-product-name="Ethereal Amethyst"
+          data-product-price="120" data-product-category="crystal"
+          data-product-image="IMG/products/amethyst_cluster.png" data-product-meta="Clusters • High Frequency">
           <div class="product-image-wrapper">
             <img src="IMG/products/amethyst_cluster.png" alt="Amethyst Cluster" class="product-img">
             <div class="hover-overlay">
@@ -178,7 +198,9 @@
         </div>
 
         <!-- Product 2 -->
-        <div class="product-card glass-card-v2 stagger-1">
+        <div class="product-card glass-card-v2 stagger-1" data-product-id="2" data-product-name="Serenity Rose Quartz"
+          data-product-price="85" data-product-category="crystal"
+          data-product-image="IMG/products/rose_quartz_point.png" data-product-meta="Points • Love & Harmony">
           <div class="product-image-wrapper">
             <img src="IMG/products/rose_quartz_point.png" alt="Rose Quartz Point" class="product-img">
             <div class="hover-overlay">
@@ -197,7 +219,9 @@
         </div>
 
         <!-- Product 3 -->
-        <div class="product-card glass-card-v2">
+        <div class="product-card glass-card-v2" data-product-id="3" data-product-name="Master Clear Oracle"
+          data-product-price="150" data-product-category="crystal" data-product-image="IMG/hero_crystal_2.png"
+          data-product-meta="Raw Stones • Infinite Clarity">
           <div class="product-image-wrapper">
             <img src="IMG/hero_crystal_2.png" alt="Clear Quartz" class="product-img">
             <div class="hover-overlay">
@@ -221,6 +245,109 @@
         <a href="#" class="btn-luxe-main">Explore Full Vault</a>
       </div>
     </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="testimonials luxury-theme">
+      <div class="ambient-glow glow-4"></div>
+      <div class="section-header luxe-header">
+        <span class="badge luxe-badge">Client Whispers</span>
+        <h2 class="luxe-title">Celestial <span class="gradient-text">Experiences</span></h2>
+        <p class="luxe-subtitle">Discover how our crystals have transformed the spaces and spirits of souls around the
+          world.</p>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass-card-v2 active">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"The Master Clear Oracle I received is breathtaking. Its clarity and energy are
+              unlike anything I've experienced. Truly a piece of celestial art."</p>
+            <div class="testimonial-user">
+              <div class="user-info">
+                <h4>Sarah Jenkins</h4>
+                <span>Energy Practitioner</span>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass-card-v2">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"The Royal Blue Hope diamond is the centerpiece of my collection. The
+              craftsmanship and ethical sourcing give me complete peace of mind."</p>
+            <div class="testimonial-user">
+              <div class="user-info">
+                <h4>Michael Chen</h4>
+                <span>Gem Enthusiast</span>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass-card-v2">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"Fast shipping and incredible packaging. My Ethereal Amethyst arrived in perfect
+              condition and it glows with such a vibrant energy."</p>
+            <div class="testimonial-user">
+              <div class="user-info">
+                <h4>Elena Rodriguez</h4>
+                <span>Interior Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn prev" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="slider-dots-testimonials">
+            <span class="t-dot active"></span>
+            <span class="t-dot"></span>
+            <span class="t-dot"></span>
+          </div>
+          <button class="slider-btn next" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Contact Section -->
+    <section class="home-contact luxury-theme" id="contact">
+      <div class="ambient-glow glow-2"></div>
+      <div class="contact-container-luxe">
+        <div class="contact-grid-luxe">
+          <div class="contact-text-luxe">
+            <span class="badge luxe-badge">Get in Touch</span>
+            <h2 class="luxe-title">Connect with the <span class="gradient-text">Source</span></h2>
+            <p class="luxe-subtitle">Have questions about a specific piece or need guidance on choosing your first
+              crystal? Our experts are here to help.</p>
+
+            <div class="contact-info-short">
+              <div class="info-item-luxe">
+                <i class="fas fa-envelope"></i>
+                <span>hello@crystalproducts.com</span>
+              </div>
+              <div class="info-item-luxe">
+                <i class="fas fa-location-dot"></i>
+                <span>Sanctuary Plaza, NY 10001</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper glass-card-v2">
+            <form id="homeContactForm" class="luxe-form">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required class="luxe-input">
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Email Address" required class="luxe-input">
+              </div>
+              <div class="form-group">
+                <textarea id="message" rows="4" placeholder="How can we help you?" required
+                  class="luxe-input"></textarea>
+              </div>
+              <button type="submit" class="btn-luxe-main full-width">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="luxury-footer">
@@ -237,21 +364,19 @@
         <div class="footer-col list-col">
           <h3>Collection</h3>
           <ul>
-            <li><a href="#">Gemstones</a></li>
-            <li><a href="#">Clusters & Geodes</a></li>
-            <li><a href="#">Polished Points</a></li>
-            <li><a href="#">Rare Finds</a></li>
+            <li><a href="products.html">All Crystals</a></li>
+            <li><a href="new-arrival.html">New Arrivals</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
           </ul>
         </div>
 
-        <!-- Company Column -->
+        <!-- Experience Column -->
         <div class="footer-col list-col">
           <h3>Experience</h3>
           <ul>
-            <li><a href="about.html">Our Heritage</a></li>
-            <li><a href="#">Privacy & Terms</a></li>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -300,22 +425,62 @@
       });
     }
 
-    // Hero Slider
-    const images = document.querySelectorAll('.slider-img');
-    const dots = document.querySelectorAll('.dot');
-    let currentIndex = 0;
+    // Testimonials Slider
+    const tCards = document.querySelectorAll('.testimonial-card');
+    const tDots = document.querySelectorAll('.t-dot');
+    const prevBtn = document.querySelector('.slider-btn.prev');
+    const nextBtn = document.querySelector('.slider-btn.next');
+    let tIndex = 0;
 
-    if (images.length > 0 && dots.length > 0) {
-      function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        dots[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-        dots[currentIndex].classList.add('active');
+    if (tCards.length > 0) {
+      function showTestimonial(index) {
+        tCards.forEach(c => c.classList.remove('active'));
+        tDots.forEach(d => d.classList.remove('active'));
+
+        tCards[index].classList.add('active');
+        tDots[index].classList.add('active');
+        tIndex = index;
       }
-      setInterval(showNextImage, 5000);
+
+      nextBtn.addEventListener('click', () => {
+        let next = (tIndex + 1) % tCards.length;
+        showTestimonial(next);
+      });
+
+      prevBtn.addEventListener('click', () => {
+        let prev = (tIndex - 1 + tCards.length) % tCards.length;
+        showTestimonial(prev);
+      });
+
+      tDots.forEach((dot, i) => {
+        dot.addEventListener('click', () => showTestimonial(i));
+      });
+
+      // Auto-play
+      setInterval(() => {
+        let next = (tIndex + 1) % tCards.length;
+        showTestimonial(next);
+      }, 8000);
+    }
+
+    // Contact Form Feedback
+    const contactForm = document.getElementById('homeContactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        alert(`Thank you ${name}! Your message has been sent.`);
+        contactForm.reset();
+      });
     }
   </script>
+  <script src="JS/productsData.js"></script>
+  <script src="JS/cart.js"></script>
+  <script src="JS/wishlist.js"></script>
+  <script src="JS/compare.js"></script>
+  <script src="JS/search.js"></script>
+  <script src="JS/productCardInit.js"></script>
+  <script src="JS/products.js"></script>
 </body>
 
 </html>

@@ -33,12 +33,30 @@
 
             <div class="search-container">
                 <div class="search-box">
-                    <input type="text" placeholder="Search products...">
+                    <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
                     <button type="button"><i class="fas fa-search"></i></button>
                 </div>
             </div>
 
             <div class="header-right">
+                <div class="wishlist-wrapper">
+                    <a href="#" class="wishlist-btn-luxe" aria-label="View Wishlist">
+                        <i class="far fa-heart"></i>
+                        <span class="wishlist-badge-luxe">0</span>
+                    </a>
+                    <div class="wishlist-dropdown-luxe" id="wishlistDropdown">
+                        <!-- Dynamic Content -->
+                    </div>
+                </div>
+                <div class="cart-wrapper">
+                    <a href="#" class="cart-btn-luxe" aria-label="View Collection">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-badge-luxe">0</span>
+                    </a>
+                    <div class="cart-dropdown-luxe" id="cartDropdown">
+                        <!-- Dynamic Content -->
+                    </div>
+                </div>
                 <div class="social-icons hide-mobile">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
                             class="fab fa-facebook-f"></i></a>
@@ -201,20 +219,18 @@
                 <div class="footer-col list-col">
                     <h3>Collection</h3>
                     <ul>
-                        <li><a href="#">Gemstones</a></li>
-                        <li><a href="#">Clusters & Geodes</a></li>
-                        <li><a href="#">Polished Points</a></li>
-                        <li><a href="#">Rare Finds</a></li>
+                        <li><a href="products.html">All Crystals</a></li>
+                        <li><a href="new-arrival.html">New Arrivals</a></li>
+                        <li><a href="offers.html">Special Offers</a></li>
                     </ul>
                 </div>
 
-                <!-- Company Column -->
+                <!-- Experience Column -->
                 <div class="footer-col list-col">
                     <h3>Experience</h3>
                     <ul>
-                        <li><a href="about.html">Our Heritage</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -265,6 +281,12 @@
             });
         }
     </script>
+    <script src="JS/productsData.js"></script>
+    <script src="JS/search.js"></script>
+    <script src="JS/wishlist.js"></script>
+    <script src="JS/compare.js"></script>
+    <script src="JS/productCardInit.js"></script>
+    <script src="JS/cart.js"></script>
 </body>
 
 </html>

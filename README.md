@@ -4,7 +4,6 @@
 A premium, high-fidelity e-commerce interface designed for a luxury crystal brand. This project features a unified "Dark Luxury" aesthetic, utilizing advanced Glassmorphism 3.0, fluid mesh gradients, and sophisticated split-layout hero sections to create an immersive user experience.
 
 ![Project Status](https://img.shields.io/badge/Status-Complete-success?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 ## ✨ Key Features
 

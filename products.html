@@ -33,12 +33,30 @@
 
             <div class="search-container">
                 <div class="search-box">
-                    <input type="text" placeholder="Search products...">
+                    <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
                     <button type="button"><i class="fas fa-search"></i></button>
                 </div>
             </div>
 
             <div class="header-right">
+                <div class="wishlist-wrapper">
+                    <a href="#" class="wishlist-btn-luxe" aria-label="View Wishlist">
+                        <i class="far fa-heart"></i>
+                        <span class="wishlist-badge-luxe">0</span>
+                    </a>
+                    <div class="wishlist-dropdown-luxe" id="wishlistDropdown">
+                        <!-- Dynamic Content -->
+                    </div>
+                </div>
+                <div class="cart-wrapper">
+                    <a href="#" class="cart-btn-luxe" aria-label="View Collection">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-badge-luxe">0</span>
+                    </a>
+                    <div class="cart-dropdown-luxe" id="cartDropdown">
+                        <!-- Dynamic Content -->
+                    </div>
+                </div>
                 <div class="social-icons hide-mobile">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
                             class="fab fa-facebook-f"></i></a>
@@ -153,15 +171,6 @@
             </div>
         </section>
 
-        <!-- Filter Bar -->
-        <section class="filter-section">
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="crystal">Crystals</button>
-                <button class="filter-btn" data-filter="diamond">Diamonds</button>
-                <button class="filter-btn" data-filter="jewellery">Jewellery</button>
-            </div>
-        </section>
 
         <!-- Product Section -->
         <section class="products luxury-theme" id="products">
@@ -176,200 +185,31 @@
                 <h2 class="luxe-title">Discover Your <span class="gradient-text">Perfect Crystal</span></h2>
                 <p class="luxe-subtitle">Each piece in our curated collection carries unique energy and timeless beauty,
                     handpicked for discerning collectors.</p>
+
+                <!-- Filter Bar Injected Here -->
+                <div class="filter-bar-wrapper">
+                    <div class="filter-container-luxe">
+                        <div class="filter-options">
+                            <button class="filter-btn-luxe active" data-filter="all">All</button>
+                            <button class="filter-btn-luxe" data-filter="crystal">Crystals</button>
+                            <button class="filter-btn-luxe" data-filter="diamond">Diamonds</button>
+                            <button class="filter-btn-luxe" data-filter="jewellery">Jewellery</button>
+                        </div>
+                        <div class="sort-wrapper-luxe">
+                            <select id="sortSelect" class="sort-select-luxe">
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name-az">Name: A to Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="about-container">
                 <div class="luxury-grid" id="productGrid">
-                    <!-- Product 1 -->
-                    <div class="product-card glass-card-v2" data-category="crystal">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/products/amethyst_cluster.png" alt="Amethyst Cluster" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Add to Collection</button>
-                            </div>
-                            <span class="luxe-tag">New Earth</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Clusters • High Frequency</span>
-                            <h3 class="product-name">Ethereal Amethyst</h3>
-                            <p class="product-price-luxe">$120.00</p>
-                        </div>
-                    </div>
-
-                    <!-- Product 2 -->
-                    <div class="product-card glass-card-v2 stagger-1" data-category="crystal">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/products/rose_quartz_point.png" alt="Rose Quartz Point" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Add to Collection</button>
-                            </div>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Points • Love & Harmony</span>
-                            <h3 class="product-name">Serentity Rose Quartz</h3>
-                            <p class="product-price-luxe">$85.00</p>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="product-card glass-card-v2" data-category="crystal">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/hero_crystal_2.png" alt="Clear Quartz" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Add to Collection</button>
-                            </div>
-                            <span class="luxe-tag highlight-tag">Master Healer</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Raw Stones • Infinite Clarity</span>
-                            <h3 class="product-name">Master Clear Oracle</h3>
-                            <p class="product-price-luxe">$150.00</p>
-                        </div>
-                    </div>
-                    <div class="product-card glass-card-v2" data-category="diamond">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/hero_crystal.png" alt="White Diamond" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Inquire Price</button>
-                            </div>
-                            <span class="luxe-tag">Rare Find</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Brilliant Cut • 2.5 Carat</span>
-                            <h3 class="product-name">Eternal White Diamond</h3>
-                            <p class="product-price-luxe">$12,500.00</p>
-                        </div>
-                    </div>
-
-                    <div class="product-card glass-card-v2" data-category="diamond">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/hero_crystal_3.png" alt="Blue Diamond" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Inquire Price</button>
-                            </div>
-                            <span class="luxe-tag highlight-tag">Exclusive</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Cushion Cut • 1.8 Carat</span>
-                            <h3 class="product-name">Royal Blue Hope</h3>
-                            <p class="product-price-luxe">$28,000.00</p>
-                        </div>
-                    </div>
-
-                    <div class="product-card glass-card-v2" data-category="diamond">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/products/rose_quartz_point.png" alt="Yellow Diamond Ring" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Inquire Price</button>
-                            </div>
-                            <span class="luxe-tag">Investment Grade</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Radiant Cut • 3.0 Carat</span>
-                            <h3 class="product-name">Sunlit Canary Diamond</h3>
-                            <p class="product-price-luxe">$18,900.00</p>
-                        </div>
-                    </div>
-
-                    <!-- Jewellery (Real Images) -->
-                    <div class="product-card glass-card-v2" data-category="jewellery">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/products/amethyst_cluster.png" alt="Amethyst Pendant" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Add to Collection</button>
-                            </div>
-                            <span class="luxe-tag">Handcrafted</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Necklace • Sterling Silver</span>
-                            <h3 class="product-name">Lunar Amethyst Pendant</h3>
-                            <p class="product-price-luxe">$240.00</p>
-                        </div>
-                    </div>
-
-                    <div class="product-card glass-card-v2" data-category="jewellery">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/hero_crystal_2.png" alt="Gold Ring" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Add to Collection</button>
-                            </div>
-                            <span class="luxe-tag">Best Seller</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Ring • 18k Gold</span>
-                            <h3 class="product-name">Celestial Orbit Ring</h3>
-                            <p class="product-price-luxe">$890.00</p>
-                        </div>
-                    </div>
-
-                    <div class="product-card glass-card-v2" data-category="jewellery">
-                        <div class="product-image-wrapper">
-                            <img src="IMG/products/rose_quartz_point.png" alt="Silver Bracelet" class="product-img">
-                            <div class="hover-overlay">
-                                <div class="action-group">
-                                    <button class="luxe-action-btn" aria-label="Add to Wishlist"><i
-                                            class="far fa-heart"></i></button>
-                                    <button class="luxe-action-btn" aria-label="Quick View"><i
-                                            class="far fa-eye"></i></button>
-                                </div>
-                                <button class="luxe-add-btn">Add to Collection</button>
-                            </div>
-                            <span class="luxe-tag">Limited Edition</span>
-                        </div>
-                        <div class="product-details">
-                            <span class="product-meta">Bracelet • Moonstone</span>
-                            <h3 class="product-name">Moonlight Essence</h3>
-                            <p class="product-price-luxe">$350.00</p>
-                        </div>
-                    </div>
+                    <!-- Dynamic Products will be injected here -->
                 </div>
             </div>
         </section>
@@ -389,20 +229,18 @@
                 <div class="footer-col list-col">
                     <h3>Collection</h3>
                     <ul>
-                        <li><a href="#">Gemstones</a></li>
-                        <li><a href="#">Clusters & Geodes</a></li>
-                        <li><a href="#">Polished Points</a></li>
-                        <li><a href="#">Rare Finds</a></li>
+                        <li><a href="products.html">All Crystals</a></li>
+                        <li><a href="new-arrival.html">New Arrivals</a></li>
+                        <li><a href="offers.html">Special Offers</a></li>
                     </ul>
                 </div>
 
-                <!-- Company Column -->
+                <!-- Experience Column -->
                 <div class="footer-col list-col">
                     <h3>Experience</h3>
                     <ul>
-                        <li><a href="about.html">Our Heritage</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Story</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -453,7 +291,13 @@
             });
         }
     </script>
+    <script src="JS/productsData.js"></script>
+    <script src="JS/search.js"></script>
+    <script src="JS/wishlist.js"></script>
+    <script src="JS/compare.js"></script>
+    <script src="JS/productCardInit.js"></script>
     <script src="JS/products.js"></script>
+    <script src="JS/cart.js"></script>
 </body>
 
 </html>
