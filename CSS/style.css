@@ -835,11 +835,6 @@ body:has(.contact-page.luxury-theme) .nav-icon {
     color: var(--text-main);
 }
 
-.stat-label {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-weight: 500;
-}
 
 /* Hero Image Wrapper */
 .hero-image {
@@ -1849,7 +1844,7 @@ footer .footer-bottom {
 
 .stat-label {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(5, 5, 5, 0.5);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
