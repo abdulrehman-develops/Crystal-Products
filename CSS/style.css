@@ -1844,7 +1844,13 @@ footer .footer-bottom {
 
 .stat-label {
     font-size: 0.9rem;
-    color: rgba(5, 5, 5, 0.5);
+    color: rgba(43, 43, 43, 0.5) ,;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.stat-label-white {
+    font-size: 0.9rem;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
